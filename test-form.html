@@ -9,8 +9,9 @@
       legend{
         font-weight: bold;
       }
-      .block{
-        width: 150px;
+      }
+      input[type="text"]#time{
+        color: gray;
       }
     </style>
   </head>
@@ -20,26 +21,26 @@
       <p>
       <fieldset>
         <legend>교육과정</legend>
-        <label>영어회화</label><input type="text"><label>(초급레벨)</label>
+        <label>영어회화</label><input type="text" placeholder="오전 9:00~11:00" id="time" ><label>(초급레벨)</label>
       </fieldset>
       </p>
       <p>
       <fieldset>
         <legend>신청자 기본정보</legend>
-        <p><label class="block">이름</label><input type="text"></p>
-        <p><label class="block">이메일</label><input type="email"></p>
-        <p><label class="block">비밀번호</label><input type="password"></p>
-        <p><label class="block">학과</label></p>
-        <p><label class="block">성별</label>
+        <p><label>이름</label><input type="text"></p>
+        <p><label>이메일</label><input type="text" name="email"></p>
+        <p><label>비밀번호</label><input type="password"></p>
+        <p><label>학과</label></p>
+        <p><label>성별</label>
           <label><input type="radio"  name="check" value="men">남자</label>
           <label><input type="radio" name="check" value="women">여자</label>
         </p>
-        <p><label class="block">관심사</label>
-          <label><input type="checkbox">여행</label>
-          <label><input type="checkbox">게임</label>
-          <label><input type="checkbox">공연</label>
-          <label><input type="checkbox">운동</label>
-          <label><input type="checkbox">기타</label>
+        <p><label>관심사</label>
+          <label><input type="checkbox" name="travel">여행</label>
+          <label><input type="checkbox" name="game">게임</label>
+          <label><input type="checkbox" name="party">공연</label>
+          <label><input type="checkbox" name="exercise">운동</label>
+          <label><input type="checkbox" name="etc">기타</label>
         </p>
       </fieldset>
       </p>
