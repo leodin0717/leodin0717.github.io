@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여름방학 특강 신청하기</title>
+    <style>
+      legend{
+        font-weight: bold;
+      }
+      .block{
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>여름방학 특강 신청하기</h1>
+    <form method="get">
+      <p>
+      <fieldset>
+        <legend>교육과정</legend>
+        <label>영어회화</label><input type="text"><label>(초급레벨)</label>
+      </fieldset>
+      </p>
+      <p>
+      <fieldset>
+        <legend>신청자 기본정보</legend>
+        <p><label class="block">이름</label><input type="text"></p>
+        <p><label class="block">이메일</label><input type="email"></p>
+        <p><label class="block">비밀번호</label><input type="password"></p>
+        <p><label class="block">학과</label></p>
+        <p><label class="block">성별</label>
+          <label><input type="radio"  name="check" value="men">남자</label>
+          <label><input type="radio" name="check" value="women">여자</label>
+        </p>
+        <p><label class="block">관심사</label>
+          <label><input type="checkbox">여행</label>
+          <label><input type="checkbox">게임</label>
+          <label><input type="checkbox">공연</label>
+          <label><input type="checkbox">운동</label>
+          <label><input type="checkbox">기타</label>
+        </p>
+      </fieldset>
+      </p>
+      <input type="submit" value="수강신청"><input type="reset" value="다시쓰기">
+    </form>
+  </body>
+</html>
