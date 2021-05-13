@@ -1,0 +1,39 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.boss{
+  text-align: center;
+  font-weight: bolder;
+  width: 600px;
+  
+}
+.div2{
+  color: white;
+  background-color: black;
+  text-align: left;
+  font-size: 16px;
+  padding: 10px;
+  
+}
+.div3 span, .div4 span{
+  color: dodgerblue;
+  
+}
+
+.div3, .div4, .div5{
+  border: 1px solid lightgray;
+  padding-bottom: 20px;
+  line-height: 2;
+}
+p{
+  color: tomato;
+  font-size: 16px;
+}
+
+#none{
+  font-weight: normal;
+  font-size: 16px;
+}
