@@ -1,137 +1,111 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animal</title>
-  <style>
-    /* body{
-      margin: 0;
-    } */
-
-    .thumbnail{
-      display: inline-block;
-      width:150px;
-      height:150px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10%;
-      
-      /* transform: translate(10px, 100px)  */
-      /* scale(1);
-      transition: all 0.3s ease-in-out; */
-      
-
-    }
-    /* .thumbnail:hover     */
-      
-      /* transform: translate(100px, 100px)  */
-      /* scale(1.4); */
-    h1{
-      text-align: center;
-      background-color: rgb(241,241,241); 
-      color: rgb(71, 61, 61);
-      font-size: 3rem;
-      margin: 0px;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-    }
-    p{
-      transform: translate(10px, 100px);
-    }
-    #thumbwrap{
-      margin-top: 100px;
-    }
-    #wrap{
-      
-    }
-    #title{
-      
-    }
-  </style>
+  <title>Document</title>
 </head>
+<style>
+      body{
+        min-height: 1000px;
+      }
+      #colums{
+        column-width: 400px;
+        column-gap: 15px;
+        width: 90%;
+        max-width: 1100px;
+        margin: 50px auto;
+      }
+      #columns figure {
+        background: #fefefe;
+        border: 2px solid #fcfcfc;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        margin: 0 10px 15px;
+        padding: 15px;
+        padding-bottom: 10px;
+        transition: opacity .4s ease-in-out;
+        display: inline-block;
+        -webkit-column-break-inside: avoid;
+        width: 300px;
+        border-radius: 10%;
+      }
+      #columns figure img {
+        width: 100%; height: auto;
+        /* border-bottom: 1px solid #ccc; */
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-radius: 20%;
+      }
+      #columns:hover figure:not(:hover) {
+      opacity: 0.4;
+      }
+      @media screen and (max-width: 750px) { 
+        #columns { column-gap: 0px; }
+        #columns figure { width: 100%; }
+      }
+      h1{
+        text-align: center;
+      }
+</style>
 <body>
-  <div id="title"><h1>Animal</h1>
+  <h1>Animal</h1>
+  <div id="columns">
+    <figure>
+      <img src="../image/animals/20180206_072821.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180206_145809.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180209_063805.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180209_063841.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180209_064432.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180210_092306.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180215_154029.jpg" >
+    </figure>
+    <figure>
+      <img src="../image/animals/20180215_154151.jpg" >
+    </figure>
+    <figure><img src="../image/animals/20180216_091705.jpg" ></figure>
+    <figure><img src="../image/animals/20180331_193050.jpg" ></figure>
+    <figure><img src="../image/animals/20180331_193238.jpg" ></figure>
+    <figure><img src="../image/animals/20180331_193407.jpg" ></figure>
+    <figure><img src="../image/animals/20180331_193449.jpg" ></figure>
+    <figure><img src="../image/animals/20180331_193715.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_194855.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_195303.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_195308.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_195700.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_200000.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_200753.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_201000.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_201332.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_210442.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_210857.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_210955.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_210958.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_211004.jpg" ></figure>
+    <figure><img src="../image/animals/20180405_211255.jpg" ></figure>
+    <figure><img src="../image/animals/20180406_100941.jpg" ></figure>
+    <figure><img src="../image/animals/20180406_102111.jpg" ></figure>
+    <figure><img src="../image/animals/20180410_091902.jpg" ></figure>
+    <figure><img src="../image/animals/20180414_174314.jpg" ></figure>
+    <figure><img src="../image/animals/20180415_095927.jpg" ></figure>
+    <figure><img src="../image/animals/20180416_105143.jpg" ></figure>
+    <figure><img src="../image/animals/20180416_224209.jpg" ></figure>
+    <figure><img src="../image/animals/20180421_170520.jpg" ></figure>
+    <figure><img src="../image/animals/20180421_170544.jpg" ></figure>
+    <figure><img src="../image/animals/20180426_144041.jpg" ></figure>
+    
   </div>
-  <div id="wrap">
-    <div id="thumbwrap">
-      <div class="thumbnail" style="background-image:url('../image/animals/20180206_072821.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180206_145809.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_063813.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_063821.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_063841.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_063843.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180206_072821.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_063841.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_063843.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180209_064432.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180210_092306.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180214_132350.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_152612.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_154026.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_154029.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_154049.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_154141.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_154151.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180215_155604.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180216_085345.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180216_085406.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180216_091320.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180216_091705.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_192857.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_192930.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193050.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193211.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193238.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193245.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193344.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193407.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193449.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193525.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193715.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193848.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180331_193857.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_194855.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_195303.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_195308.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_195700.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_200000.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_200753.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_201000.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_201332.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_210442.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_210857.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_210955.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_210958.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_211004.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180405_211255.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_100420.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_100442.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_100844.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_100941.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_100947.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_101035.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_101310.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_101503.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_101548.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_102111.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_102320.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_102449.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_114230.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_114504.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_124002.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_164915.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_164933.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_164935.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_165947.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_182149.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180406_182610.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180410_091902.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180414_174314.jpg')"></div>
-      <div class="thumbnail" style="background-image:url('../image/animals/20180414_174544.jpg')"></div>
-    </div>
-  </div>
+</body>
+</html>
