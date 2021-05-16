@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life</title>
-  <style>
-    /* body{
-      margin: 0;
-    } */
-
-    .thumbnail{
-      display: inline-block;
-      width:150px;
-      height:150px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10%;
-      
-      /* transform: translate(10px, 100px)  */
-      /* scale(1);
-      transition: all 0.3s ease-in-out; */
-      
-
-    }
-    /* .thumbnail:hover     */
-      
-      /* transform: translate(100px, 100px)  */
-      /* scale(1.4); */
-    h1{
-      text-align: center;
-      background-color: rgb(241,241,241); 
-      color: rgb(71, 61, 61);
-      font-size: 3rem;
-      margin: 0px;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-    }
-    p{
-      transform: translate(10px, 100px);
-    }
-    #thumbwrap{
-      margin-top: 100px;
-    }
-    #wrap{
-      
-    }
-    #title{
-      
-    }
-  </style>
-</head>
-<body>
-  <div id="title"><h1>Life</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <style>
+      body {
+        min-height: 1000px;
+      }
+      #colums {
+        column-width: 400px;
+        column-gap: 15px;
+        width: 90%;
+        max-width: 1100px;
+        margin: 50px auto;
+      }
+      #columns figure {
+        background: #fefefe;
+        border: 2px solid #fcfcfc;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        margin: 0 10px 15px;
+        padding: 15px;
+        padding-bottom: 10px;
+        transition: opacity 0.4s ease-in-out;
+        display: inline-block;
+        -webkit-column-break-inside: avoid;
+        width: 400px;
+        border-radius: 10%;
+      }
+      #columns figure img {
+        width: 100%;
+        height: auto;
+        /* border-bottom: 1px solid #ccc; */
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-radius: 20%;
+      }
+      #columns:hover figure:not(:hover) {
+        opacity: 0.4;
+      }
+      @media screen and (max-width: 750px) {
+        #columns {
+          column-gap: 0px;
+        }
+        #columns figure {
+          width: 100%;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Food</h1>
+  <div id="columns">
+    <figure><img src="../image/snow/20180206_090259.jpg" ></figure>
+    <figure><img src="../image/snow/20180206_125157.jpg" ></figure>
+    <figure><img src="../image/snow/20180207_124245.jpg" ></figure>
+    <figure><img src="../image/snow/20180209_183309.jpg" ></figure>
+    <figure><img src="../image/snow/20180209_205234.jpg" ></figure>
+    <figure><img src="../image/snow/20180212_155705.jpg" ></figure>
+    <figure><img src="../image/snow/20180212_200006.jpg" ></figure>
+    <figure><img src="../image/snow/20180213_211728.jpg" ></figure>
+    <figure><img src="../image/snow/20180214_132519.jpg" ></figure>
+    <figure><img src="../image/snow/20180215_193150.jpg" ></figure>
+    <figure><img src="../image/snow/20180216_130032.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_151443.jpg" ></figure>
+    <figure><img src="../image/snow/20180226_192024.jpg" ></figure>
+    <figure><img src="../image/snow/20180227_204909.jpg" ></figure>
+    <figure><img src="../image/snow/20180301_202254.jpg" ></figure>
+    <figure><img src="../image/snow/20180303_132746.jpg" ></figure>
+    <figure><img src="../image/snow/20180316_143806.jpg" ></figure>
+    <figure><img src="../image/snow/20180316_143912.jpg" ></figure>
+    <figure><img src="../image/snow/20180317_222302.jpg" ></figure>
+    <figure><img src="../image/snow/20180327_155454.jpg" ></figure>
+    <figure><img src="../image/snow/20180427_132627.jpg" ></figure>
+    <figure><img src="../image/snow/20180427_142918.jpg" ></figure>
+    <figure><img src="../image/snow/20180510_194131.jpg" ></figure>
+    <figure><img src="../image/snow/20180525_124150.jpg" ></figure>
+    <figure><img src="../image/snow/20180609_181139_263.jpg" ></figure>
+    <figure><img src="../image/snow/20180610_211141_456.jpg" ></figure>
+    <figure><img src="../image/snow/20180610_211153_930.jpg" ></figure>
+    <figure><img src="../image/snow/20180612_123142.jpg" ></figure>
+    <figure><img src="../image/snow/20180612_211552_333.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_231309_011.jpg" ></figure>
+    <figure><img src="../image/snow/20180617_023103_233.jpg" ></figure>
+    <figure><img src="../image/snow/20180617_104044_747.jpg" ></figure>
+    <figure><img src="../image/snow/20180617_195346_479.jpg" ></figure>
+    <figure><img src="../image/snow/20180618_031629_591.jpg" ></figure>
   </div>
-  <div id="wrap">
-    <div id="thumbwrap">
-    </div>
-  </div>
+  </body>
+</html>
