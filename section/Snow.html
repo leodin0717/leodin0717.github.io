@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life</title>
-  <style>
-    /* body{
-      margin: 0;
-    } */
-
-    .thumbnail{
-      display: inline-block;
-      width:150px;
-      height:150px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 10%;
-      
-      /* transform: translate(10px, 100px)  */
-      /* scale(1);
-      transition: all 0.3s ease-in-out; */
-      
-
-    }
-    /* .thumbnail:hover     */
-      
-      /* transform: translate(100px, 100px)  */
-      /* scale(1.4); */
-    h1{
-      text-align: center;
-      background-color: rgb(241,241,241); 
-      color: rgb(71, 61, 61);
-      font-size: 3rem;
-      margin: 0px;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-    }
-    p{
-      transform: translate(10px, 100px);
-    }
-    #thumbwrap{
-      margin-top: 100px;
-    }
-    #wrap{
-      
-    }
-    #title{
-      
-    }
-  </style>
-</head>
-<body>
-  <div id="title"><h1>Life</h1>
-  </div>
-  <div id="wrap">
-    <div id="thumbwrap">
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life</title>
+    <style>
+      body {
+        min-height: 1000px;
+      }
+      #colums {
+        column-width: 400px;
+        column-gap: 15px;
+        width: 90%;
+        max-width: 1100px;
+        margin: 50px auto;
+      }
+      #columns figure {
+        background: #fefefe;
+        border: 2px solid #fcfcfc;
+        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+        margin: 0 10px 15px;
+        padding: 15px;
+        padding-bottom: 10px;
+        transition: opacity 0.4s ease-in-out;
+        display: inline-block;
+        -webkit-column-break-inside: avoid;
+        width: 300px;
+        border-radius: 10%;
+      }
+      #columns figure img {
+        width: 100%;
+        height: auto;
+        /* border-bottom: 1px solid #ccc; */
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+        border-radius: 20%;
+      }
+      #columns:hover figure:not(:hover) {
+        opacity: 0.4;
+      }
+      @media screen and (max-width: 750px) {
+        #columns {
+          column-gap: 0px;
+        }
+        #columns figure {
+          width: 100%;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Snow</h1>
+    <figure><img src="../image/snow/18-05-11-17-18-16-589_deco.jpg" ></figure>
+    <figure><img src="../image/snow/20180217_221305.jpg" ></figure>
+    <figure><img src="../image/snow/20180217_223432.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_132113.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_132023.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_132409.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_132810.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_132943.jpg" ></figure>
+    <figure><img src="../image/snow/20180218_134714.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_160149.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_160517.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_161128.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_161221.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_161730.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_162314.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_164620.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_164707.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_165228.jpg" ></figure>
+    <figure><img src="../image/snow/20180223_165553.jpg" ></figure>
+    <figure><img src="../image/snow/20180228_220151.jpg" ></figure>
+    <figure><img src="../image/snow/20180228_223138.jpg" ></figure>
+    <figure><img src="../image/snow/20180308_131203.jpg" ></figure>
+    <figure><img src="../image/snow/20180316_144448.jpg" ></figure>
+    <figure><img src="../image/snow/20180428_200311.jpg" ></figure>
+    <figure><img src="../image/snow/20180512_205429.jpg" ></figure>
+    <figure><img src="../image/snow/20180512_210158.jpg" ></figure>
+    <figure><img src="../image/snow/20180512_210300.jpg" ></figure>
+    <figure><img src="../image/snow/20180512_210525.jpg" ></figure>
+    <figure><img src="../image/snow/20180516_002423.jpg" ></figure>
+    <figure><img src="../image/snow/20180516_010200.jpg" ></figure>
+    <figure><img src="../image/snow/20180516_010226.jpg" ></figure>
+    <figure><img src="../image/snow/20180516_010526.jpg" ></figure>
+    <figure><img src="../image/snow/20180516_011059.jpg" ></figure>
+    <figure><img src="../image/snow/20180516_013003.jpg" ></figure>
+    <figure><img src="../image/snow/20180523_173620.jpg" ></figure>
+    <figure><img src="../image/snow/20180529_111614.jpg" ></figure>
+    <figure><img src="../image/snow/20180606_125751_924.jpg" ></figure>
+    <figure><img src="../image/snow/20180614_002506_199.jpg" ></figure>
+    <figure><img src="../image/snow/20180614_003007_056.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_085659_855.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_090343_291.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_090552_521.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_091616_786.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_120048_065.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_120117_666.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_120144_749.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_120648_727.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_120831_923.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_122920_529.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_131538_523.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_131630_871.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_131732_396.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_135750_312.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_141208_025.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_145621_431.jpg" ></figure>
+    <figure><img src="../image/snow/20180616_152627_719.jpg" ></figure>
+  </body>
+</html>
