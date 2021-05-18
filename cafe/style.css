@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+header{
+  height: 500px;
+  background-color: yellow;
+  background-image: url(../0514/animal.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+nav{
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items:flex-end
+}
+nav > ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 200px;
+  
+}
+nav > ul a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+}
+li{
+  margin: 0 50px;
+}
+
+section{
+  border: 1px dotted gray;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+img{
+  /* padding: 0 50px; */
+  padding-right: 30px;
+}
+footer{
+  background-color: black;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  line-height: 60px;
+  font-style: italic;
+}
+.photo, .article{
+  display: inline-block;
+}
+#info, .article{
+  vertical-align: top;
+  font-weight: bolder;
+  
+}
+#italic{
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+#map{
+  background-color: lightgray;
+}
+#recommend{
+  font-size: small;
+}
