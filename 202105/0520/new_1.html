@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      background-color: violet;
+    }
+    #wrapper{
+      width: 50%;
+      margin: 0 auto;
+      min-width: 250px;
+    }
+    .section {
+      margin: 20px;
+      background-color: white;
+    }
+
+    .section > img {
+      width: 100%;
+    }
+
+    .section > div {
+      height: 200px;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+    }
+
+    .section > div > p:nth-of-type(1) {
+      font-weight: bolder;
+      font-size: 1em;
+    }
+    .section > div > p:nth-of-type(2) {
+      font-weight: bolder;
+      font-size: 0.5em;
+    }
+
+    @media screen and (min-width:768px) {
+    
+    .section > img {
+      width: 50%;
+      display: inline-block;
+    }
+    .section > div {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    @media screen and (min-width: 1024px) {
+      #wrapper {
+        width: 100%;
+      }
+
+      .section {
+        display: inline-block;
+        width: 30%;
+      }
+
+      .section > img {
+        display: inline-block;
+        width: 50%;
+      }
+      .section > div {
+        display: inline-block;
+        width: 48%;
+      }
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="section">
+      <img src="http://via.placeholder.com/200x200">
+      <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga libero sed. Culpa, fuga.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="section">
+      <img src="http://via.placeholder.com/200x200">
+      <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga libero sed. Culpa, fuga.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="section">
+      <img src="http://via.placeholder.com/200x200">
+      <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga libero sed. Culpa, fuga.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
