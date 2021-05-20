@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav_bar {
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+
+}
+
+.nav_logo{
+  font-size: 2rem;
+  color: aquamarine;
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.nav_menu li{
+  
+  padding: 1em 1em;
+}
+
+
+.nav_icons {
+  color: azure;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav_icons li {
+  padding: 0.5em 1em;
+}
+
+@media screen and (max-width:32rem) {
+  .nav_bar{
+    background-color: burlywood;
+    flex-direction: column;
+  }
+}

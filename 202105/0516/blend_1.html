@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .blend{
+      height: 800px;
+      border: 5px solid black;
+      background-color: rgb(255,0,0,0.2);
+      background-image: url(../0514/animal.jpg);
+      background-size: cover;
+      background-blend-mode:screen;
+      transition:background-color 2s;
+    }
+    .blend:hover{
+      background-color: rgb(255,0,0,1);
+      transition:background-color 2s;
+    }
+  </style>
+</head>
+<body>
+  <div class="blend"></div>
+</body>
+</html>

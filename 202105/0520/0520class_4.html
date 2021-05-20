@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 0~320px */
+    #wrapper{
+      border: 2px solid black;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 0;
+    }
+    #wrapper > div {
+      height: 100px;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+    #wrapper > div:nth-of-type(1){
+      background-color: thistle;
+    }
+    #wrapper > div:nth-of-type(2){
+      background-color: blue;
+    }
+    #wrapper > div:nth-of-type(3){
+      background-color: aqua;
+    }
+    #wrapper > div:nth-of-type(4){
+      background-color: firebrick;
+    }
+    #wrapper > div:nth-of-type(5){
+      background-color: lawngreen;
+    }
+    /* phone 320~767px */
+    @media screen and (min-width:320px){
+      #wrapper > div{
+        width: 100%;
+      }
+    }
+     /* tablet 768~1023 */
+    @media screen and (min-width:768px){
+      #wrapper > div {
+          width: 50%;
+      }
+      #wrapper > div:nth-of-type(5){
+        width: 100%;
+      }
+    }
+    /* pc 1024~ */
+    @media screen and (min-width:1024px){
+      #wrapper > div{
+        width: 20%;
+      }
+      #wrapper > div:nth-of-type(5){
+        width: 20%;
+    }
+  }
+    
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

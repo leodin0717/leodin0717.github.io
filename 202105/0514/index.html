@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        margin: 0 auto;
+        width: 960px;
+      }
+      nav{
+        display: inline-block;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+      header{
+        border: 1px dotted black;
+      }
+      .sec1, .sec2, ol, img, .sec3{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      section{
+        border: 1px dotted gray;
+        
+      }
+      ol{
+        text-align: left;
+      }
+      footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      h1{
+        text-align: left;
+        padding: 20px;
+      }
+      #sec2{
+        background-color: lightgray;
+      }
+      p{
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <!-- 가로 정렬 방법 모르겠음 -->
+        <nav><a href="#"> 카페 소개</a></nav>
+        <nav><a href="#"> 오시는 길</a></nav>
+        <nav><a href="#"> 이달의 추천</a></nav>
+      </header>
+      <!-- 박스 사이즈에 맞춰 이미지 조절하는 법 모름 -->
+      <img src="..">
+      <section>
+        <!-- 이미지를 가운데 정렬 하는 법 모름 -->
+        <h1> 카페소개 </h1>
+        <img src="../0514/animal.jpg" width="300px" height="200px">
+        <div class="sec1">
+          <p>영업 시간 : 오전 9시 ~ 밤 10시</p>
+          <p>휴무 : 매주 수요일</p>
+          <p>(수요일이 공휴일일 경우 수요일 영업, 다음날 휴무)</p>
+        </div>
+      </section>
+      <section id="sec2">
+        <h1> 오시는 길 </h1>
+        <img src="../0514/food.jpg" width="300px" height="200px">
+        <div class="sec2">
+          <p>서귀포시 안덕면 사계리 0000-000</p>
+          <p>제주 올레 10코스 산방산 근처</p>
+        </div>
+      </section>
+      <section>
+        <!-- 글자 오른쪽으로 그림 배치 모름 -->
+        <h1>이달의 추천</h1>
+        <div class="sec3">
+          <h3>핸드드립 아이스커피</h3>
+          <ol>
+            <li>1인분 기준으로 서버에 각얼음 5조각(한조각의 20cc) 넣고 추출을 시작한다.</li>
+            <li>평상시 보다 원두의 양은 2배 정도 (20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</li>
+            <li>아이스 잔에 얼음 6~7개씩 섞어서 시원하게 마신다</li>
+          </ol>
+        </div>
+        <img src="../0514/picture.jpg" width="300px" height="200px">
+      </section>
+      <footer>my times with coffee</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellow;
+      }
+      @media all and (max-width: 800px) {
+        body {
+          background-color: red;
+        }
+        li {
+          display: inline-block;
+        }
+      }
+      @media all and (max-width: 348px) {
+        body {
+          background-color: violet;
+        }
+        li {  
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">menu-1</a></li>
+      <li><a href="#">menu-2</a></li>
+      <li><a href="#">menu-3</a></li>
+      <li><a href="#">menu-4</a></li>
+    </ul>
+  </body>
+</html>
