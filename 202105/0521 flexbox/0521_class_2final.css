@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+header {
+  text-align: center;
+  margin: 30px;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+main > div{
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+main > div > h2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+main > div:nth-child(1){
+  background-image: url("../../image/food/20180206_090259.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+main > div:nth-child(2){
+  background-image: url("../../image/food/20180206_090259.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+main > div:nth-child(3){
+  background-image: url("../../image/food/20180206_090259.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+main > div:nth-child(4){
+  background-image: url("../../image/food/20180206_090259.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+main > div:nth-child(5){
+  background-image: url("../../image/food/20180206_090259.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ***************테블릿 사이즈 레이아웃 ***************************** */
+@media screen and (min-width:768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main > div {
+    width: 49.5%;
+    
+  }
+  main > div:nth-of-type(5){
+    width: 100%;
+  }
+}
+/* ***************pc용 사이즈 레이아웃 ***************************** */
+@media screen and (min-width:1024px) {
+  main > div {
+    width: 33%;
+  }
+  main > div:nth-of-type(5){
+    /* width: 66.66666%; */
+    flex: 2 2 0;
+    /* basis가 0 일경우는 컨텐츠만큼 영역을 갖는다 */
+  }
+ /* 여백을 넣는건 마진을 조절하거나 width 값을 조절한다 */
+}
