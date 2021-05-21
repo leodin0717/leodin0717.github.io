@@ -7,47 +7,15 @@
 
 nav {
   background-color: lightgray;
-  position: fixed;
-  width: 100%;
 }
 
-nav > .nav_html > h1 {
+nav > .nav_menu > ul > li:nth-child(1){
   color: white;
-  font-size: 2em;
-  font-weight: bolder;
-  /* margin: 30px; */
-}
-
-.nav_bar {
-  display: flex;
 }
 
 
-nav > .nav_bar > ul {
+nav > .nav_menu > ul {
   display: flex;
-  justify-content:flex-start;
+  flex-direction: row;
   list-style: none;
-  padding: 30px;
-  width: 100%;
-}
-
-nav > .nav_bar > ul > li {
-margin:10px
-}
-
-nav > .nav_bar > ul > li:nth-child(5){
-  margin-right: 0;
-  margin-left: auto;
-
-}
-
-nav > .nav_bar > ul > li:nth-child(6){
-  margin-right: 0;
-  margin-left: auto;
-}
-
-nav > .nav_bar > ul > li > a {
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
 }
