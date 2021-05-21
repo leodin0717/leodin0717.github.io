@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+nav{
+  background-color: black;
+  padding-top: 50px;
+}
+
+#wrap{
+  /* display: flex; */
+}
+
+#wrap > ul {
+  list-style: none;
+  /* text-decoration: none; */
+  display: flex;
+  padding: 20px 10px 0 10px;
+  justify-content:flex-start;
+  /* justify-content: space-evenly; */
+}
+
+#wrap a:nth-child(5) {
+  margin-left: auto;
+}
+/* 중요!!@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 마진을 왼쪽줄거냐 오른쪽 줄거냐*/
+
+#wrap > ul > a {
+  color: white;
+  text-decoration: none;
+  font-size: 3em;
+  display: block;
+  padding: 10px 20px;
+  
+}
+
+
+#wrap > ul > a:hover {
+  background-color: fuchsia;
+  border-radius: 10px 10px 0 0;
+}
