@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#container {
+width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#container {
+  text-align: center;
+}
+#container .photo {
+  position: relative;
+}
+
+#container > .photo > h2 {
+  position: absolute;
+  right: 400px;
+  bottom: 0;
+}
+
+#container > .photo > img {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+
+
+
+footer {
+  background-color: black;
+  color: white;
+}
