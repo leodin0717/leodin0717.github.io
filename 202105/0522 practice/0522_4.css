@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  margin: 0 auto;
+  /* width: 960px; */
+}
+
+/* ***************header*********************** */
+
+#container > header {
+  background-color: yellow;
+  height: 200px;
+}
+
+
+/* **********************nav************************ */
+
+nav {
+  /* background-color: black; */
+  /* opacity: 0.6; */
+  position: relative;
+  text-align: center;
+}
+
+nav > div {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+}
+
+nav > ul > li {
+  list-style: none;
+  display: inline-block;
+  height: 5vh;
+  width: 10%;
+  margin: 2% 0 0 2%;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  /* color: white; */
+  opacity: 1;
+  font-weight: bolder;
+}
+
+#wrap {
+  text-align: center;
+}
+.info, .map, .choice {
+  border: 1px dotted gray;
+}
+
+h1 {
+  margin: 15px;
+}
+
+/* ******************class_info************************ */
+.info > .info_article {
+  font-weight: bolder;
+  margin: 10px;
+  line-height: 1.5;
+}
+.italic {
+  font-weight: normal;
+  font-size: 0.7em;
+  font-style: italic;
+}
+/* ******************class_map************************ */
+
+.map > .map_article {
+  font-weight: bolder;
+  margin: 10px;
+  line-height: 1.3;
+}
+
+/* ******************class_choice************************ */
+
+.choice > .choice_article {
+  margin: 20px;
+}
+
+.choice > .choice_article > h2{
+  font-size: 1em;
+  margin: 10px;
+}
+.choice > .choice_article > ol > li {
+}
+
+
+footer{
+  height: 50px;
+  padding-top: 45px;
+}
+
+
+/* ***********************tablet_7680px************************ */
+@media screen and (min-width:410px){
+
+nav > ul > li {
+  list-style: none;
+  display: block;
+  height: 7vh;
+  width: 30%;
+  margin: 2% 0 0 2%;
+}
+
+@media screen and (min-width:768px) {
+
+  nav > ul > li {
+    list-style: none;
+    display: inline-block;
+    height: 5vh;
+    width: 20%;
+    margin: 2% 0 0 2%;
+}
+
+
+@media screen and (min-width:1024px) {
+  #wrap {
+    display: inline-block;
+  }
+
+
+  .info {
+    width: 50vw;
+    display: inline-block;
+
+  }
+
+  .map {
+    width: 49vw;
+    display: inline-block;
+
+  }
+}
