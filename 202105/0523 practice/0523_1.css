@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 0;
 }
 
 #container {
@@ -94,20 +95,21 @@ footer {
   }
   
   #info {
-    width: 48vw;
-    display: inline-block;
+    width: 49vw;
+    float: left;
     border: 1px solid gray;
     height: 50vh;
   }
   #map {
-    width: 48vw;
-    display: inline-block;
+    width: 49vw;
+    /* display: inline-block; */
+    float: right;
     border: 1px solid gray;
     height: 50vh;
- 
+    margin-left: -1px;
   }
 
   #choice {
-    /* clear: both; */
+    clear: both;
   }
 }
