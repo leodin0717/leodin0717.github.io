@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  border: 5px solid black;
+}
+
+/* **********************************************nav***************************************************** */
+
+nav {
+  background-color: black;
+  
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 10px 0;
+}
+
+nav > ul > li{
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+/* **********************************************main***************************************************** */
+main > img {
+  width: 100%;
+}
+
+/* **********************************************info***************************************************** */
+#info, #map, #choice {
+  padding: 30px;
+}
+
+#info h1, #map h1 , #choice h1 {
+  margin-bottom: 20px;
+}
+
+.article {
+  margin-left: 20px;
+}
+
+#info > .article {
+  font-weight: bolder;
+}
+
+#info > .article > p {
+  margin: 15px;
+}
+
+#info > .article > #italic {
+  font-size: smaller;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* **********************************************map***************************************************** */
+
+#map {
+  background-color: lightgray;
+}
+
+#map > .article {
+  font-weight: bolder;
+}
+#map > .article > p {
+  margin: 15px;
+}
+
+/* **********************************************choice***************************************************** */
+
+h2 {
+  font-size: 1.4em;
+}
+
+ol {
+  line-height: 1.5;
+}
+
+/* **********************************************footer***************************************************** */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
