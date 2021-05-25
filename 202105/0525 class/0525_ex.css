@@ -18,10 +18,11 @@ header {
 header > i {
   margin-left:80px;
   margin-top: 25px;
+  font-size: 15px;
 }
 
 header > h1 {
-  font-size: 1em;
+  font-size: 10px;
   font-weight: bolder;
   margin-left: 5px;
   margin-right: 80px;
@@ -29,7 +30,7 @@ header > h1 {
   color: #b6c0c9;
 }
 
-header > a {
+header  a {
   text-decoration: none;
   color: #cad3da;
   /* display: flex; */
@@ -39,13 +40,14 @@ header > a {
   font-size: 4px;
 }
 
+header a:hover{
+  background-color: skyblue;
+}
+
 header > a:nth-of-type(1){
   color: #6b7d93;
 }
 /* *********************************************************info_left******************************************* */
-#info > .info_left{
-  /* position: relative; */
-}
 
 #info .info_left > p:nth-of-type(1){
   margin-left: 80px;
@@ -75,6 +77,10 @@ header > a:nth-of-type(1){
   text-decoration: none;
   color: #434c53;
 }
+
+#info .info_left > p > a:hover{
+  background-color: slateblue;
+}
 /* .info_left_back {
   width:462px;
   height:517px;
@@ -82,7 +88,6 @@ header > a:nth-of-type(1){
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4;
 } */
 
 .info_left_back_btn {
@@ -253,6 +258,7 @@ header > a:nth-of-type(1){
 #new_collection > h1 {
   font-size: 15px;
   text-align: center;
+  margin-bottom: 15px;
   
 }
 
@@ -268,14 +274,13 @@ header > a:nth-of-type(1){
   margin-right: 3px;
 }
 
-.collection_back > .price {
+.collection_back > .price > p {
   position: relative;
-  font-size: 3px;
+  font-size: 2px;
   top: 16px;
   left: 16px;
-  width: 39px;
+  width: 45px;
   color: white;
-  font-weight: bolder;
   border: 1px solid #537cb4;
   background-color: #537cb4;
   border-radius: 10%;
