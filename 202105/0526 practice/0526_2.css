@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+header {
+  background-color: gray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  color: white;
+}
+header img {
+  margin-right: 30px;
+}
+nav{
+ display: flex;
+ align-items: center;
+ width: 80%;
+}
+  
+nav > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+nav > a:nth-of-type(5){
+  margin-left: auto;
+}
+
+#banner{
+  height: 100vh;
+}
+
+#wrapper {
+  
+}
