@@ -1,117 +1,93 @@
 @charset "utf-8";
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
   background-color: gray;
+  width: 100%;
   display: flex;
   align-items: center;
-  position: fixed;
   justify-content: space-between;
-  width: 100%;
 }
 
-header h1 {
+h1 {
   color: white;
 }
-
 header img {
   margin-right: 30px;
 }
-
-#header_menu {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  
+nav{
+ display: flex;
+ align-items: center;
+ width: 80%;
 }
-
-#header_menu > a {
+  
+nav > a {
   text-decoration: none;
   color: white;
   margin: 0 10px;
 }
 
-#header_menu > a:nth-of-type(5){
+nav > a:nth-of-type(5){
   margin-left: auto;
 }
 
-#banner {
+#banner{
   background-image: url("http://via.placeholder.com/1920x1280");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* *******************section%************************ */
-section {
+#wrapper {
   width: 80%;
+  margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px auto;
+  
 }
 
 .card {
+  padding: 10px;
   width: 24%;
   margin-bottom: 20px;
-  border: 1px dotted black;
+  border: 1px dotted gray;
+
 }
 
 .card > img {
   width: 100%;
 }
 
-
-.detail {
-  margin-top: 5px;
-  padding: 10px;
-}
-
-.detail_text {
+.card > .article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.detail > .detail_text > p:nth-of-type(1){
-font-weight: bolder;
-font-size: 1em;
+.card > .article > p:nth-of-type(1){
+  font-size: 8px;
+  font-weight: bolder;
 }
 
-.detail > .detail_text > p:nth-of-type(2){
-font-size: 0.7em;
-line-height: 2em;
+.card > .article > p:nth-of-type(2){
+  margin-left: auto;
+  font-size: 0.7em;
 }
 
-.detail > .detail_text > p:nth-of-type(3){
-  font-size: 0.8em;
+.card > .article > p:nth-of-type(3){
+  font-size: 0.7em;
 }
 
-.card_btn {
-  text-align: center;
-}
-
-.card_btn > button {
-  margin: 0 5px;
-}
-
-.info{
+.info {
   display: flex;
+  border: 1px dotted gray;
   justify-content: space-between;
   padding: 10px;
-  font-size: 0.8em;
-  border: 1px dotted gray;
   margin-top: 10px;
+
 }
 
 .info > img {
-  display: inline-block;
   margin-left: auto;
 }
 

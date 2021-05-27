@@ -81,14 +81,14 @@ header > a:nth-of-type(1){
 #info .info_left > p > a:hover{
   background-color: slateblue;
 }
-/* .info_left_back {
+.info_left {
   width:462px;
   height:517px;
   background-color: #eaebef;
   position: absolute;
   top: 0;
   left: 0;
-} */
+}
 
 .info_left_back_btn {
   margin-top : 136px;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px auto 100px;
+      gap: 10px;
+      grid-template-areas: 
+      "header header header"
+      "main main aside"
+      "footer footer footer"
+    }
+    header{
+      background-color: lightpink;
+      grid-area: header;
+    }
+    main{
+      background-color: lightseagreen;
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 100px, 1fr;
+      grid-template-rows: repeat(2, 100px);
+      grid-template-areas: 
+      "base base"
+      "btm sidebar";
+    }
+    main #sec1 {
+      background-color: mediumorchid;
+      grid-area: base;
+    }
+    main #sec2 {
+      background-color: mediumturquoise;
+      grid-area: btm;
+    }
+    main #sec3 {
+      background-color: moccasin;
+      grid-area: sidebar;
+    }
+    aside{
+      background-color: lightskyblue;
+      grid-area: aside;
+    }
+    footer{
+      background-color: lightyellow;
+      grid-area: footer;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header></header>
+    <main>
+      <div id="sec1"></div>
+      <div id="sec2"></div>
+      <div id="sec3"></div>
+    </main>
+    <aside></aside>
+    <footer></footer>
+  </div>
+
+</body>
+</html>
