@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  #container{ 
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 500px 100px;
+                      /* 80px auto 80px */
+    gap: 10px;
+    grid-template-areas:
+    "header headerr header"
+    "main main aside"
+    "footer footer footer";
+  }
+    header {
+      grid-area:header;
+      background-color:red ;
+    }
+    main {
+      grid-area:main;
+      background-color: skyblue;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2,200px);
+      grid-template-areas: "section section section"
+                            "detail detail sidebar";
+      gap: 10px;
+      padding: 20px;
+    }
+    aside {
+      grid-area: aside;
+      background-color: teal;
+    }
+    footer {
+      grid-area : footer;
+      background-color: purple;
+    
+    }
+    main > .sec1{
+      background-color: aqua;
+      grid-area: section;
+    }
+    main > .sec2{
+      background-color: blue;
+      grid-area: detail;
+    }
+    main > .sec3{
+      background-color: blueviolet;
+      grid-area: sidebar;
+    }
+</style>
+</head>
+<body>
+  <div id="container">
+    <header>1</header>
+    <main>2
+      <section class="sec1">3</section>
+      <section class="sec2">4</section>
+      <section class="sec3">5</section>
+    </main>
+    <aside>6</aside>
+    <footer>7</footer>
+  </div>
+</body>
+</html>
