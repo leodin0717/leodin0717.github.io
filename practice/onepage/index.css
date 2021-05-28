@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* header{
+  background-color: #eaebef;
+  width: 385px;
+  height: 470px;
+  position: absolute; top: 0; left: 0;
+} */
+nav > #nav_left_banner > {}
+nav > #nav_left_banner > h1 {  color: #90a0af; font-size: 9px;}
+nav > #nav_left_banner > i {  font-size: 14px; }
+#nav_main_menu > ul > li { font-size: 6px;}
