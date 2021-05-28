@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+#wrapper {
+  background-color: black;
+  position: absolute;
+  color: white;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  
+}
+
+#wrapper .items{
+
+}
+
+#wrapper .items .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper .items .bar{
+  border: 1px solid aquamarine;
+  border-radius: 5px;
+  padding: 5px;
+}
+#wrapper .items .bar div{
+  background-color: yellow;
+  height: 10px;
+  animation: ani 0.5s;
+}
+
+@keyframes ani {
+  0% {
+    width: 0%;
+  }
+  
+}

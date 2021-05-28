@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3d transform</title>
+  <style>
+    .wrapper{
+      perspective: 500px;
+      padding: 100px;
+    }
+    .parent {
+      width: 200px;
+      border: 2px solid red;
+      transform-style: preserve-3d;
+    }
+    img{
+      width: 200px;
+      height: 300px;
+      border: 1px solid black;
+      transition: 1s;
+      /* transform: perspective(500px)rotatey(45deg); */
+      /* 모니터에서 얼마나 거리를 둔 건지의 느낌  작을수록 원근감이 가까운 느낌
+      보통 500~900정도 씀*/
+      transform: rotateY(45deg);
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="parent">
+        <img src="../0524 practice/image/glass.PNG" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
