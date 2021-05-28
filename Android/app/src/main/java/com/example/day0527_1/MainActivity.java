@@ -34,5 +34,8 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener mClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            if(v.getId() == R.id.btnplus){
+
+            }
         }
     }

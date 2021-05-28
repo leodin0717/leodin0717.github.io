@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: lightpink;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+    }
+    .box1:hover{
+      transform: translate(300px, 500px);
+
+    }
+    .box2:hover{
+      transform: scale(3);
+    }
+
+    .box3:hover{
+      transform: rotate(-33333360deg);
+    }
+
+    .box4:hover{
+      transform: skew(-30deg, -30deg);
+      /* 가장 좌측 하단을 기준으로 함 */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">translate</div>
+  <div class="box2">scale</div>
+  <div class="box3">rotate</div>
+  <div class="box4">skew</div>
+</body>
+</html>

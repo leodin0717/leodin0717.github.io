@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      /* transition-property: all;
+      transition-duration: 1s; */
+      transition: 2s;
+      /* 프로퍼티는 all 이기 때문에 생략가능 */
+      /* 0.4 or .4s 가능  */
+      transition-timing-function: 3.9s cubic-bezier(.25,.77,.91,.38);
+    }
+    .box:hover{
+      width: 500px;
+      height: 200px;
+      background-color: lightpink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

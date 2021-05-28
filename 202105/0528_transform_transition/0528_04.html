@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 10px;
+      height: 200px;
+      background-color: lightskyblue;
+      position: relative;
+      top: 200px;
+      left: 50%;
+      /* transform: translate(-50%); */
+      transform-origin: center bottom;
+      animation: first-ani 3s infinite;
+      animation-direction: alternate;
+     
+    }
+    .box:hover{
+      /* animation-name: first-ani;
+      animation-duration: 1s;
+      /* animation-delay: 5s; */
+      /* animation-iteration-count: infinite; */
+
+      
+    }
+    @keyframes first-ani {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

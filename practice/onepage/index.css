@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+<<<<<<< HEAD
 /* header{
   background-color: #eaebef;
   width: 385px;
@@ -10,3 +11,44 @@ nav > #nav_left_banner > {}
 nav > #nav_left_banner > h1 {  color: #90a0af; font-size: 9px;}
 nav > #nav_left_banner > i {  font-size: 14px; }
 #nav_main_menu > ul > li { font-size: 6px;}
+=======
+header > .header_back{
+  background-color: #eaebef;
+  width: 384px;
+  height: 469px;
+
+}
+
+/* *************************************nav*********************************** */
+
+nav > ul {
+  /* font-size: 14px; */
+  position: absolute; top: 16px; left: 81px;
+  display: flex;
+}
+
+nav > ul > li {
+  padding: 8px;
+}
+
+nav > ul > li > a {
+  color: #a6afb6;
+  font-size: 6px;
+}
+
+nav > ul > li:nth-of-type(1) > a {
+  font-size: 14px;
+  /* margin-right:; */
+  padding-right: 0;
+}
+
+nav > ul > li:nth-of-type(2) {
+  font-size: 9px;
+  display: inline-block;
+  margin-right: 70px;
+}
+
+nav > ul > li:nth-of-type(3) > a{
+  color: #708ba8;
+}
+>>>>>>> 55238db64362cae0708bbe6e73da69d102b997fd
