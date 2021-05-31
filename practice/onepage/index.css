@@ -180,7 +180,7 @@ nav > ul li a:hover{
 /* ******************************************features****************************************** */
 
 #features {
-  width: 607px;
+  width: 620px;
   height: 304px;
   margin: 43px 80px 0;
   display: inline-block;
@@ -197,7 +197,7 @@ nav > ul li a:hover{
 .card_wrap{
   display: grid;
   grid-template-columns: repeat(auto-fit, 141px);
-  gap: 10px;
+  gap: 15px;
   margin-top: 35px;
 }
 
@@ -215,4 +215,88 @@ nav > ul li a:hover{
 
 .features_card_detail p{
   font-size: 6px;
+}
+
+
+/* ******************************************collection****************************************** */
+
+
+#collection {
+  width: 609px;
+  height: 347px;
+  margin: 0 80px;
+}
+
+#collection h2{
+  text-align: center;
+  font-size: 22px;
+}
+
+.collection_card_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.collection_card_wrap .collection_card{
+  position: relative;
+}
+
+.collection_card img{
+  margin: 20px 10px;
+}
+
+.collection_card_price{
+  position: absolute; left: 26px; top: 35px;
+  width: 45px;
+  height: 20px;
+  font-size: 5px;
+  border: 1px solid #bfcdd8;
+  background-color: #4475a0;
+  color: #fff;
+  border-radius: 3px;
+  
+}
+
+.collection_card_name{
+  position: relative; bottom:70px; left: 30px;
+  font-size: 9px;
+
+}
+
+.collection_card_category{
+  position: relative; bottom: 65px; left: 30px;
+  font-size: 9px;
+  color: #9daab3;
+}
+
+.collection_btn_wrap{
+  position: absolute;
+  width: 54px;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+.collection_btn_wrap  a:nth-child(1) .collection_btn_left{
+  width: 5px;
+  height: 5px;
+  background-color: #3071a9;
+  border-radius: 50%;
+  margin: 5px;
+}
+.collection_btn_wrap a:nth-child(2) .collection_btn_center{
+  width: 5px;
+  height: 5px;
+  background-color: #92a2af;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.collection_btn_wrap a:nth-child(3) .collection_btn_right{
+  width: 5px;
+  height: 5px;
+  background-color: #92a2af;
+  border-radius: 50%;
+  margin: 5px;
 }
