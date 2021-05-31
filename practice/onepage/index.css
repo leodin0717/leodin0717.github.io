@@ -1,17 +1,6 @@
 @charset "utf-8";
 
-<<<<<<< HEAD
-/* header{
-  background-color: #eaebef;
-  width: 385px;
-  height: 470px;
-  position: absolute; top: 0; left: 0;
-} */
-nav > #nav_left_banner > {}
-nav > #nav_left_banner > h1 {  color: #90a0af; font-size: 9px;}
-nav > #nav_left_banner > i {  font-size: 14px; }
-#nav_main_menu > ul > li { font-size: 6px;}
-=======
+
 header > .header_back{
   background-color: #eaebef;
   width: 384px;
@@ -183,7 +172,6 @@ nav > ul > li:nth-of-type(2) {
 nav > ul > li:nth-of-type(3) > a{
   color: #708ba8;
 }
-<<<<<<< HEAD
 
 nav > ul li a:hover{
   color: skyblue;
@@ -202,6 +190,3 @@ nav > ul li a:hover{
   /* position: absolute; left: 333px; */
   text-align: center;
 }
-=======
->>>>>>> 55238db64362cae0708bbe6e73da69d102b997fd
->>>>>>> 11f0fae9eeeadf5bdd5b1635f5d37e2fc5eb6e43

@@ -34,8 +34,21 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener mClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if(v.getId() == R.id.btnplus){
+           int a = Integer.parseInt(edtxt01.getText().toString());
+           int b = Integer.parseInt(edtxt02.getText().toString());
 
+            if(v.getId() == R.id.btnplus){
+                txtv01.setText(""+(a+b));
+            }
+            if(v.getId() == R.id.btnmin){
+                txtv01.setText(""+(a-b));
+            }
+            if(v.getId() == R.id.btnmul){
+                txtv01.setText(""+(a*b));
+            }
+            if(v.getId() == R.id.btndiv){
+                txtv01.setText(""+(a/b));
             }
         }
+        };
     }
