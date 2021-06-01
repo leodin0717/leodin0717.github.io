@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+.sns{
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+}
+
+.sns a{
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sns a:before{
+  content: "";
+  background-color: lightskyblue;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .5s;
+}
+
+.sns a:hover::before{
+  width: 100%;
+}
+
+.sns a:hover .fab{
+  transform: rotateY(360deg);
+  color: white;
+}
+
+.sns a:nth-child(1):before{
+  background-color: lightgoldenrodyellow;
+}
+
+.sns a:nth-child(2):before{
+  background-color: lightsalmon;
+}
+.sns a:nth-child(3):before{
+  background-color: lightgreen;
+}
+.sns a:nth-child(4):before{
+  background-color: lightsteelblue;
+}
+.sns a:nth-child(5):before{
+  background-color: lightcyan;
+}
+
+
+.sns .fab{
+  position: relative;
+  /* 원래 있어야 하는 그 자리 relative */
+  /* color: white; */
+  transition: .5s;
+}
+
+

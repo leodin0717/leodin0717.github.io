@@ -112,16 +112,6 @@ header > .header_back{
   cursor: pointer;
 }
 
-.main_btn_right:hover{
-  background-color:rgba(0, 0, 0, 0.5);
-  color: red;
-}
-.main_btn_left:hover{
-  background-color:rgba(0, 0 , 0, 0.5);
-  color: red;
-}
-
-
 .main_btn_left {
   color: #aab7c0;
 }

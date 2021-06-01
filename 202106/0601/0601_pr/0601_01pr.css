@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slide{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.slide-images{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  font-size: 0;
+  transition: .5s;
+
+}
+
+input[name=tab]{
+  display: none;
+}
+
+input[id=tab1]:checked ~ .slide .slide-images{
+  left:0;
+}
+input[id=tab2]:checked ~ .slide .slide-images{
+  left:-300px;
+}
+input[id=tab3]:checked ~ .slide .slide-images{
+  left:-600px;
+}
+
+.btn{
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn label{
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+  background-color: lightpink;
+}
+
