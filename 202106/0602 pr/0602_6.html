@@ -6,29 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    button{
-      border: none;
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .wrapper{
       width: 200px;
     }
+    
+
     .labels{
+      display: none;
+    }
+
+    .labels a{
+      text-decoration: none;
+      color: black;
+      display: block;
+      text-align: center;
+      padding: 20px 30px;
+    }
+    label[for=menu]{
+      width: 200px;
+      cursor: pointer;
+      display: block;
+      text-align: center;
+      background-color: #dfebf7;
+      padding: 30px;
+      border-radius: 30px;
+      border: 10px solid #eee;
+      box-shadow: 5px 5px 10px #333 inset;
+    }
+
+    #menu{
+      display: none;
+    }
+    input[id="menu"]:checked ~.labels{
       display: block;
     }
+
+    a:hover{
+      background-color: ivory;
+    }
+
+
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <button>Drop</button>
-    <input type="checkbox" id="cb">
+    <label for="menu" >Drop</label>
+    <input type="checkbox" id="menu">
     <div class="labels">
-    <label for="menu" >menu1</label>
-    <label for="menu" >menu2</label>
-    <label for="menu" >menu3</label>
-    <label for="menu" >menu4</label>
-    <label for="menu" >menu5</label>
-    <label for="menu" >menu6</label>
-  </div>
+      <a href="#">menu-1</a>
+      <a href="#">menu-2</a>
+      <a href="#">menu-3</a>
+      <a href="#">menu-4</a>
+      <a href="#">menu-5</a>
+      <a href="#">menu-6</a>
+    </div>
   </div>
 </body>
 </html>
