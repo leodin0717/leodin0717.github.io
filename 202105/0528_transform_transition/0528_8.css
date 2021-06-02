@@ -40,5 +40,5 @@
 
 .product:hover .detail{
   opacity: 1;
-  transform: translateY(-170px);
+  /* transform: translateY(-170px); */
 }

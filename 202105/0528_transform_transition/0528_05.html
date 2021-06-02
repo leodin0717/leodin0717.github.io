@@ -12,19 +12,30 @@
     }
     .parent {
       width: 200px;
-      border: 2px solid red;
+      /* border: 2px solid red; */
       transform-style: preserve-3d;
     }
     img{
-      width: 200px;
-      height: 300px;
-      border: 1px solid black;
+      width: 300px;
+      height: 200px;
+      /* border: 1px solid black; */
       transition: 1s;
-      /* transform: perspective(500px)rotatey(45deg); */
+      transform: perspective(500px)rotatey(45deg);
       /* 모니터에서 얼마나 거리를 둔 건지의 느낌  작을수록 원근감이 가까운 느낌
       보통 500~900정도 씀*/
-      transform: rotateY(45deg);
+      transform: rotateX(70deg);
+      /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
+      transition: .5s;
       
+    }
+
+    img:hover{
+      transform: rotate(0);
+      
+      border: 0;
+      
+    
+
     }
   </style>
 </head>
@@ -32,7 +43,7 @@
   <div class="wrapper">
     <div class="container">
       <div class="parent">
-        <img src="../0524 practice/image/glass.PNG" alt="">
+        <img src="../../portpolio/apple/compare_mbp16__fykfvftfaeuu_large.png" alt="">
       </div>
     </div>
   </div>

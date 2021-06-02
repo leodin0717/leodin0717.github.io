@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .sns{
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    a{
+      margin: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .sns a{
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      display: inline-block;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      position: relative;
+      overflow: hidden;
+      
+    }
+
+    .sns a:before{
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 0;
+      bottom: 0;
+      left: 0;
+      background-color: skyblue;
+      transition: .5s;
+    }
+
+    .sns a:hover::before{
+      width: 100%;
+    }
+
+    .sns .fab{
+      position: relative;
+    }
+
+    .sns a:hover .fab{
+      transform: rotateY(360deg);
+      color: white;
+      transition: .5s;
+    }
+    .sns a:nth-child(1):before{
+    background-color: lightgoldenrodyellow;
+  }
+
+  .sns a:nth-child(2):before{
+    background-color: lightsalmon;
+  }
+  .sns a:nth-child(3):before{
+    background-color: lightgreen;
+  }
+  .sns a:nth-child(4):before{
+    background-color: lightsteelblue;
+  }
+  .sns a:nth-child(5):before{
+    background-color: lightcyan;
+  }
+  </style>
+</head>
+<body>
+  <div class="sns">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-tumblr"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+  </div>
+</body>
+</html>

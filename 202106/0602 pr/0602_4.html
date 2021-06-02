@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap{
+      width: 200px;
+    }
+    .wrap a{
+      text-decoration: none;
+      color: #333;
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .wrap Button{
+      border: none;
+      width: inherit;
+      cursor: pointer;
+      color: white;
+      padding: 5px 10px;
+    }
+
+    .subwrap{
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      display: none;
+    }
+
+    .wrap:hover .subwrap{
+      display:block;
+    }
+
+    .subwrap a:hover{
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <Button>Dropdown</Button>
+    <div class="subwrap">
+    <a href="#">menu-1</a>
+    <a href="#">menu-2</a>
+    <a href="#">menu-3</a>
+    <a href="#">menu-4</a>
+    <a href="#">menu-5</a>
+    <a href="#">menu-6</a>
+  </div>
+  </div>
+</body>
+</html>
