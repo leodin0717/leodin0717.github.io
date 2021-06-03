@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .slide{
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+
+    }
+
+    .slide-videos{
+      width: 300vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 1s;
+    }
+    .slide .slide-videos video{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      z-index: -10;
+    }
+    .container{
+      position: absolute;
+      
+    }
+
+    input[id="tab1"]:checked ~label-wrap label[for=tab1]{
+      left: 0;
+    }
+    input[id="tab2"]:checked ~label-wrap label[for=tab2]{
+      left: -100vw;
+    }
+    input[id="tab3"]:checked ~label-wrap label[for=tab3]{
+      left: -200vw;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <div class="slide">
+      <div class="slide-videos">
+        <video src="videos/video1.mp4" autoplay loop muted poster="images/sea.jpeg"></video>
+        <video src="videos/video2.mp4" autoplay loop muted poster="images/sea.jpeg"></video>
+        <video src="videos/video3.mp4" autoplay loop muted poster="images/sea.jpeg"></video>
+      </div>
+      <div class="slide-text">
+        <h1>동영상 플레이 합니다.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, illo?</p>
+      </div>
+    </div>
+    <div class="label-wrap">
+      <label for="tab1">1</label>
+      <label for="tab2">2</label>
+      <label for="tab3">3</label>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
+
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Caesar Dressing', cursive;
+    }
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      line-height: 1.5em;
+    }
+
+    .login{
+      width: 800px;
+      box-shadow: 0 0 28px rgba(0, 0, 0, 0.4);
+      padding: 30px;
+    }
+
+    .login p{
+      font-weight: bolder;
+      margin-top: 15px;
+    }
+
+    .login input[type=email],
+    .login input[type=password]{
+      width: 100%;
+      box-sizing: border-box;  
+      /* or width값을 줄인다 */
+      border:1px solid #eee;
+      border-radius: 5px;
+      padding: 15px;
+    }
+    .login input[type=email]{
+      background: url(images/email.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+      background-size: 20px;
+      padding-left:50px;
+
+    
+    }
+
+    .login input[type=password]{
+      background-image:url(images/key.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+      background-size: 20px;
+      padding-left:50px;
+    }
+
+    .login input[type=email]:focus::placeholder,
+    .login input[type=password]:focus::placeholder
+    {
+      opacity: 0;
+    }
+    
+    .login input[type=email]:hover,
+    .login input[type=password]:hover 
+    {
+      box-shadow: 0 0 5px lightskyblue;
+    }
+    .login > div {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .login > div > a:hover{
+      text-decoration: underline;
+    }
+
+    .login > button {
+      background: lightskyblue;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <form class="login">
+    <p>Email</p>
+    <input type="email" placeholder="Email Address">
+    <p>Password</p>
+    <input type="password" placeholder="Password">
+    <div>
+      <label>
+        <input type="checkbox">
+        Keep me logged in
+      </label>
+      <a href="#">Forgot your Password?</a>
+    </div>
+    <button type="submit">Log In</button>
+  </form>
+</body>
+</html>

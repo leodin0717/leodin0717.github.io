@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D</title>
+  <style>
+    .container{
+      width: 70vw;
+      height: 70vh;
+      background-color: ivory;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 500px;
+      /* transition: 1s; */
+    }
+
+    .container div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* transform-style: preserve-3d; */
+    }
+
+    .card{
+      width: 300px;
+      height: 100px;
+      /* background-color: violet; */
+      /* margin: 10px; */
+      /* margin: -15px; */
+      box-shadow: 0 5px 5px 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      transition: 1s;
+      background-image: url(../../portpolio/2021트렌드/apple/compare_imac27__ftc2wevwltym_large.png);
+      background-size: cover;
+    }
+
+    .card{
+      transform: rotateX(-60deg);
+      /* transition: 1s; */
+    }
+
+    .container:hover .card{
+      width: 0;
+      height: 0;
+      position: absolute;
+      transition: 2s;
+      /* transform-style: unset; */
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+  </div>
+</body>
+</html>
