@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .image-slide{
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide-items{
+      width: 300vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* display: flex; */
+      transition: 1s;
+    }
+
+    .slide-items div{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* display: inline-block; */
+      float: left;
+      width: 100vw;
+      font-size: 3em;
+
+    }
+    .slide-items div:nth-child(1){
+      background-color: lightpink;
+    }
+    .slide-items div:nth-child(2){
+      background-color: lightskyblue;
+    }
+    .slide-items div:nth-child(3){
+      background-color: lightgreen;
+    }
+
+    input[id="tab1"]:checked ~ .image-slide .slide-items{
+      left: 0;
+    }
+    input[id="tab2"]:checked ~ .image-slide .slide-items{
+      left: -100vw;
+    }
+    input[id="tab3"]:checked ~ .image-slide .slide-items{
+      left: -200vw;
+    }
+
+    input[name="tab"]{
+      display: none;
+    }
+    .label-wrap{
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+      text-align: center;
+      
+    }
+    .label-wrap label{
+      display: inline-block;
+      width: 60px;
+      height: 5px;
+      background-color: white;
+      cursor: pointer;
+      
+    }
+
+    input[id=tab1]:checked  ~.label-wrap label[for=tab1],
+    input[id=tab2]:checked  ~.label-wrap label[for=tab2],
+    input[id=tab3]:checked  ~.label-wrap label[for=tab3]{
+      background-color: black;
+    }
+    .slide-items> div> h1{
+      transform: translateY(-200px);
+      transition: .5s;
+      transition-delay: .7s;
+      opacity: 0;
+      color: white;
+    }
+    input[id=tab1]:checked ~ .image-slide .slide-items> div:nth-child(1)> h1,
+    input[id=tab2]:checked ~ .image-slide .slide-items> div:nth-child(2)> h1,
+    input[id=tab3]:checked ~ .image-slide .slide-items> div:nth-child(3)> h1{
+      transform: translateY(0);
+      opacity: 1;
+      
+    }
+
+    .slide-items> div:nth-child(1){
+      background-image: url(images/sea.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    .slide-items> div:nth-child(2){
+      
+      background: url(images/desert.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .slide-items> div:nth-child(3){
+      background-image: url(images/forest.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <div class="image-slide">
+      <div class="slide-items">
+        <div><h1>Slide content 01</h1></div>
+        <div><h1>Slide content 02</h1></div>
+        <div><h1>Slide content 03</h1></div>
+      </div>
+    </div>
+    <div class="label-wrap">
+      <label for="tab1"></label>
+      <label for="tab2"></label>
+      <label for="tab3"></label>
+    </div>
+  </div>
+</body>
+</html>

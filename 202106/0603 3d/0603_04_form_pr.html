@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      width: 600px;
+      height: 300px;
+      background: #eee;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+
+    .email>i>input, .password>i>input{
+      width: 100%;
+    }
+
+    .login_check{
+      float: left;
+      margin: 10px 0 10px 0;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      float: right;
+    }
+
+    .container > h1 {
+      width: 200px;
+      /* height: 30px; */
+      background: rosybrown;
+      text-align: center;
+      color: white;
+      border-radius: 10px;
+      /* font-size: 12px; */
+      /* padding: 20p */
+    }
+    .container > .email>i{
+      width: 100%;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="email">
+      <h1>Email</h1>
+      <i class="far fa-envelope">
+      <input type="email" placeholder="Email" >
+      </i>
+    </div>
+    <div class="password">
+    <h1>Password</h1>
+    <input type="password" placeholder="Password">
+    </div>
+    
+    <div class="login_check">
+    <input type="checkbox" id="login" >
+    <label for="login">Keep me logged in</label>
+    </div>
+
+    <a href="#">Forgot your Password?</a>
+
+    <h1>Log in</h1>
+  </>
+</body>
+</html>
