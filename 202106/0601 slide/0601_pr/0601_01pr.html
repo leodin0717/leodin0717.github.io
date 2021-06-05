@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="0601_01pr.css">
+  <title>Document</title>
+  <style>
+    body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slide{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.slide-images{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  font-size: 0;
+  transition: .5s;
+
+}
+
+input[name=tab]{
+  display: none;
+}
+
+input[id=tab1]:checked ~ .slide .slide-images{
+  left:0;
+}
+input[id=tab2]:checked ~ .slide .slide-images{
+  left:-300px;
+}
+input[id=tab3]:checked ~ .slide .slide-images{
+  left:-600px;
+}
+
+.btn{
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn label{
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+  background-color: lightpink;
+}
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <input type="radio" name="tab" checked id="tab1">
+  <input type="radio" name="tab" checked id="tab2">
+  <input type="radio" name="tab" checked id="tab3"> 
+  <div class="slide">
+    <div class="slide-images">
+      <img src="../images/1.png" alt="img1" width="300px" height="300px">
+      <img src="../images/2.png" alt="img2" width="300px" height="300px">
+      <img src="../images/3.png" alt="img3" width="300px" height="300px">
+    </div>
+  </div>
+  <div class="btn">
+      <label for="tab1"></label>
+      <label for="tab2"></label>
+      <label for="tab3"></label>
+  </div>
+   
+</div>
+</body>
+</html>
