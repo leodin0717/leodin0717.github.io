@@ -40,5 +40,9 @@
 
 .product:hover .detail{
   opacity: 1;
-  /* transform: translateY(-170px); */
+  transform: translateY(-170px);
+}
+
+p{
+  font-size: 0.8em;
 }
