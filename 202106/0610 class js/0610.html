@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>momentum</title>
+</head>
+<body>
+  <form id="login-form">
+
+  <input type="text" placeholder="What is your name?">
+  <button>Log in</button>
+  </form>
+  <script>
+    const loginInput = document.querySelector("#login-form input");
+    const loginButton = document.querySelector("#login-form button");
+    function LoginBtnClick(){
+      const username = loginInput.value;
+      if(username === ""){
+        alert("please write your name")
+      } else if(username.length > 15){
+        alert("your name is too long")
+      }
+    }
+    loginButton.addEventListener("click", LoginBtnClick);
+  </script>
+</body>
+</html>
