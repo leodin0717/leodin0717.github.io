@@ -73,9 +73,9 @@
                   비밀번호 : <input type="password" name="pass"><br>
                   비밀번호 확인 : <input type="password" name="pass_confirm"><br>
                   이름 : <input type="text" name="name"><br>
-                  이메일 : <input type=text" name="email1">@<input type="text" name="email2"<br>
+                  이메일 : <input type=text" name="email1">@<input type="text" name="email2"><br>
                   <input type="button" value="가입신청" onclick="check_input()">
-                  <input type="button" value="Reset" onclick="reset_form()"<br>
+                  <input type="button" value="Reset" onclick="reset_form()"><br>
         </p>
     </form>
   </section> <hr>
