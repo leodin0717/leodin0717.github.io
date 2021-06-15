@@ -23,7 +23,7 @@
    <table border="0">
     	<tr>
  	        <td> 번호</td>
-	        <td >제목</td>
+	        <td> 제목</td>
 	        <td>
 		        <?php						
 			        if ($mode=="send") echo "받은이";
@@ -58,7 +58,7 @@
             $row = mysqli_fetch_array($result);
             // 하나의 레코드 가져오기
             $num        = $row["num"];
-	        $subject    = $row["subject"];
+	        	$subject    = $row["subject"];
             $regist_day = $row["regist_day"];
 
 	        if ($mode=="send") $msg_id = $row["rv_id"];
