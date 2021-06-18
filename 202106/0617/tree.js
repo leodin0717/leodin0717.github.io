@@ -1,13 +1,13 @@
 // 트리********************
-// const num = 5;
-// for(let i =1 ; i<=num;  i++){
-//   let star = "";
-//   for(let k =1; k<=num-i; k++){
-//     star +=' ';
-//   }
-//   for(let j = 1 ; j<=(i*2)-1; j++){
-//     star +='*';
-//   }
+const num = 5;
+for(let i =1 ; i<=num;  i++){
+  let star = "";
+  for(let k =1; k<=num-i; k++){
+    star +=' ';
+  }
+  for(let j = 1 ; j<=(i*2)-1; j++){
+    star +='*';
+  }
   
 //   console.log(star);
 // }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- <a id="naver" href="https://www.naver.com">네이버</a>
+  <div class="box1"><p>첫번쨰</p></div>
+  <div class="box two"><p>두번쨰</p></div>
+  <div class="box 3"><p>세번쨰</p></div> -->
+  <button>&lt;</button>
+  
+  <img src="../0601 slide/images/1.png">
+  <button>&gt;</button>
+  <script>
+    setInterval(clickRightEvent, 1000);
+    let imgName = ['1', '2', '3'];
+    let imgObj = document.querySelector('img'); //이미지 객체를 가져온다
+    let flag = 0;
+    let leftBtn = document.querySelector('button:nth-child(1)');
+    leftBtn.addEventListener('click', clickLeftEvent);
+    function clickLeftEvent(){
+      // console.log('left btn click');
+      flag--;  // 0 2 1 이런식으로 줄어드니깐
+      if(flag<0)flag = 2;
+      // imgObj.setAttribute('src',"../0601 slide/images/"+imgName[flag]+".png")
+      changeImage();
+
+
+    }
+    let rightBtn = document.querySelector('button:nth-child(3)'); // 자식들 중에 3번째 / nth of type 했을 땐 2번째
+    rightBtn.addEventListener('click', clickRightEvent);
+    function clickRightEvent(){
+      flag++;   // 0 1 2 이런식으로 올라가니깐
+      if(flag>2) flag = 0;
+      // console.log(flag);
+      changeImage();
+
+    
+      // console.log('right btn click');
+    }
+    function changeImage(){
+      imgObj.setAttribute( 'src', "../0601 slide/images/"+imgName[flag]+".png")
+    }
+    // let btnObj0 = document.querySelectorAll('button');
+    // let btnObj1 = document.querySelectorAll('button');
+    // btnObj0.addEventListener('click', changeImage);
+    // function changeImage (){
+
+    // }
+    // let flag = 0; // flag = 0  -> 1번  falge = 1 -> 2번 flag =2 ->3번
+    // let obj = document.querySelector('img');
+    //     // obj.onclick = changeImage();
+    //     // 괄호가 빠지면 함수를 저장하는 식
+    //     // 괄호가 있으면 즉시 실행
+    //     obj.addEventListener('click', changeImage);
+    //     function changeImage(){
+    //       // console.log('click');
+    //       let imgName = ['1', '2', '3'];
+    //       flag++;
+    //       if(flag >2) 
+    //       flag =0;
+    //       console.log(flag);
+    //       obj.setAttribute('src', '../0601 slide/images/'+imgName[flag]+'.png');
+    //       // if(flag == 1){
+          //   //1번 이미지
+          //   flag = 2;
+          //   obj.setAttribute('src', '../0601 slide/images/2.png');
+          // }
+          // else if(flag == 2){
+          //   //2번 이미지
+          //   flag = 0;
+          //   obj.setAttribute('src', '../0601 slide/images/3.png');
+          // }
+          // else {
+          //   // 3번 이미지
+          //   flag = 1;
+          //   obj.setAttribute('src', '../0601 slide/images/1.png');
+          // }
+        
+          // obj.setAttribute('src', '../0601 slide/images/2.png');
+        // }
+      // let objTag = document.createElement("h1");
+      // let bodyObj = document.querySelector('body');
+      // let aObj = document.querySelector('#naver');
+      // objTag.innerText = '제목';
+
+      // console.log(aObj.parentNode);
+      // // bodyObj.appendChild(objTag);
+      // // bodyObj.insertBefore(objTag, aObj);
+      // // bodyObj.removeChild(aObj);
+
+      // aObj.parentNode.insertBefore(objTag, aObj);
+      // 부모 노드를 모를 때 자식요소를 통해서 요소 추가하기
+      // let bodyObj = document.querySelector('body');
+      // console.log(bodyObj.children);
+      // for(let obj of bodyObj.children){
+      //   console.log(obj);
+      //  for of문을 사용해 배열형태의 자식 요소들을 출력
+      // }
+      // let list = ['1st', '2st', '3st', '4st'];
+      // list.forEach(obj => console.log(obj));
+      // arrow 함수로 변경
+      // list.forEach(function(obj){
+      //   console.log(obj);
+      // });
+        
+  </script>
+</body>
+</html>
