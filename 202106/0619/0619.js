@@ -10,6 +10,7 @@
 //   sum +='\n';
 // }
 // console.log(sum);
+// 트리
 
 // let sum = '';
 // let length = 9;
@@ -23,6 +24,11 @@
 //   sum +='\n'
 // }
 // console.log(sum);
+//         *
+//        **
+//       ***
+//      ****
+//     *****
 
 // let sum = '';
 // let length = 9;
@@ -85,14 +91,55 @@
 
 // console.log(sum);
 
-mul = function(n){
-let sum = 1;
-for(i=1; i<=n; i++){
-  sum *= i
-};
-return sum;
-};
-
-mul(10);
+// mul = function(n){
+// let sum = 1;
+// for(i=1; i<=n; i++){
+//   sum *= i
+// };
+// return sum;
+// };
 
 
+// plus = function(n){
+//   let sum = 0;
+//   for(let i = 0; i<=n; i++){
+//     sum += i
+//   };
+//   return sum;
+// };
+
+// plus(10);
+
+// let length = 8;
+// let sum = '';
+// for(let i = 0; i<length-i; i++){
+//   for(let j = 0; j<length-(2*i); j++){
+//     sum+='*';
+//   }
+//   sum +='\n';
+// }
+// console.log(sum);
+
+
+// let length = 7;
+// let sum = '';
+// for(let i = 0; i<length; i++){
+//   for(let j = 0; j<2*i-1; j++){
+//     sum+='*';
+//   }
+//   sum +='\n';
+// }
+// console.log(sum);
+
+let length = 7;
+let sum = '';
+for(let i = 0; i<length; i++){
+  for(let j = 0; j<i ;j++){
+    sum+=' ';
+  }
+  for(let j = 0; j<length-i; j++){
+    sum+='*';
+  }
+  sum +='\n';
+}
+console.log(sum);
