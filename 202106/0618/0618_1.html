@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    img{
+      width: 10%;
+      height: 20%;
+    }
+  </style>
 </head>
 <body>
   
@@ -22,6 +28,7 @@
     let imgObj = document.querySelector('img'); //이미지 객체를 가져온다
     let flag = 0;
     let leftBtn = document.querySelector('button:nth-child(1)');
+
     leftBtn.addEventListener('click', clickLeftEvent);
     function clickLeftEvent(){
       // console.log('left btn click');
