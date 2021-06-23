@@ -32,7 +32,7 @@
     leftBtn.addEventListener('click', clickLeftEvent);
     function clickLeftEvent(){
       // console.log('left btn click');
-      flag--;  // 0 2 1 이런식으로 줄어드니깐
+      flag--;  // 바로 -1 조건 충족  2 1 이런식으로 줄어드니깐
       if(flag<0)flag = 2;
       // imgObj.setAttribute('src',"../0601 slide/images/"+imgName[flag]+".png")
       changeImage();
@@ -46,9 +46,6 @@
       if(flag>2) flag = 0;
       // console.log(flag);
       changeImage();
-
-    
-      // console.log('right btn click');
     }
     function changeImage(){
       imgObj.setAttribute( 'src', "../0601 slide/images/"+imgName[flag]+".png")
