@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide bar</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    #wrapper{
+      width: 800px;
+      margin: auto;
+    }
+    .slide_box{
+      width: 300px;
+      height: 300px;
+      margin: 30px auto;
+      /* overflow: hidden; */
+    }
+    .slide_list{
+      display: flex;
+    }
+    .slide_contents{
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Image slide bar</h1>
+    <div class="slide_box">
+      <div class="slide_list">
+        <img src="image/0.jpg" alt="image0" class="slide_contents"/>
+        <img src="image/1.jpg" alt="image1" class="slide_contents"/>
+        <img src="image/2.jpg" alt="image2" class="slide_contents"/>
+        <img src="image/3.jpg" alt="image3" class="slide_contents"/>
+        <img src="image/4.jpg" alt="image4" class="slide_contents"/>
+      </div>
+    </div>
+    <div class="slide_btn_box">
+      <button class="slide_btn_pre">Pre</button>
+      <button class="slide_btn_next">Nxt</button>
+    </div>
+  </div>
+  <script src="slide-roof.js"></script>
+</body>
+</html>
